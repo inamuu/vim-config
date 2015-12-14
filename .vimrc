@@ -1,0 +1,10 @@
+syntax on
+colorscheme molokai
+set t_Co=256
+set number
+set ruler
+set autoindent
+set expandtab
+set tabstop=2
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
