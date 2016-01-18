@@ -6,5 +6,5 @@ set ruler
 set autoindent
 set expandtab
 set tabstop=2
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
 set fileformats=unix,dos,mac
