@@ -17,3 +17,6 @@ set fileformats=unix,dos,mac
 "macvim用の設定
 set lines=40
 set columns=120
+
+"インデント
+NeoBundle 'nathanaelkane/vim-indent-guides'
