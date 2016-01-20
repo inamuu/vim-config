@@ -1,9 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/kazuma/Downloads/yoyaku'
-let g:netrw_dirhist_2='/Users/kazuma/Downloads'
-let g:netrw_dirhist_3='/Users/kazuma/Downloads/yoyaku-xmas'
-let g:netrw_dirhist_4='/Users/kazuma/Downloads/yoyaku-xmas/list'
-let g:netrw_dirhist_5='/Users/kazuma/.ssh/privatekey'
-let g:netrw_dirhist_6='/Users/kazuma/Downloads/ftptest/orandaya.net/home/yoyaku'
-let g:netrw_dirhist_7='/Users/kazuma/Downloads/ftptest/orandaya.net/home'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/kazuma/Downloads'
+let g:netrw_dirhist_2='/Users/kazuma/.vim/bundle/neobundle.vim'
+let g:netrw_dirhist_3='/Users/kazuma/.tmux'
