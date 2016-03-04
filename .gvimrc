@@ -13,6 +13,7 @@ set expandtab
 set tabstop=2
 set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
 set fileformats=unix,dos,mac
+set nobackup
 
 "macvim用の設定
 set lines=40
