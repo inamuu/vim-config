@@ -35,6 +35,8 @@ set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
 set fileformats=unix,dos,mac
 autocmd FileType * setlocal formatoptions-=r
 autocmd FileType * setlocal formatoptions-=o
+set backup
+set backupdir=~/.vimbackup
 
 "ツリー表示
 let g:vimfiler_as_default_explorer = 1
