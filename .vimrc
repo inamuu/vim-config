@@ -13,6 +13,11 @@ NeoBundle 'Shougo/vimfiler'
 "ツリー表示
 "NeoBundle 'scrooloose/nerdtree'
 
+" git
+NeoBundle 'tpope/vim-fugitive'
+
+" Modify status line
+NeoBundle 'itchyny/lightline.vim'
 
 call neobundle#end()
 
@@ -26,6 +31,7 @@ NeoBundleCheck
 syntax on
 colorscheme molokai
 set t_Co=256
+set laststatus=2
 set number
 set ruler
 "set autoindent
@@ -35,6 +41,8 @@ set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
 set fileformats=unix,dos,mac
 autocmd FileType * setlocal formatoptions-=r
 autocmd FileType * setlocal formatoptions-=o
+set backup
+set backupdir=~/.vimbackup
 
 "ツリー表示
 let g:vimfiler_as_default_explorer = 1
@@ -43,3 +51,4 @@ autocmd FileType vimfiler nmap <buffer> <CR> <Plug>(vimfiler_expand_or_edit)
 
 "autocmd VimEnter * execute 'NERDTree'
 "VimEnter * execute 'VimFiler'
+
