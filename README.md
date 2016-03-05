@@ -3,5 +3,5 @@
 `$ mkdir ~/.vimbackup`
 
 2. ファイルのシンボリックリンクの作成  
-`$ ln -s ~/Github/vim-config/.vim* ~/
-`$ ln -s ~/Github/vim-config/.gvim* ~/
+`$ ln -s ~/Github/vim-config/.vim* ~/`
+`$ ln -s ~/Github/vim-config/.gvim* ~/`
