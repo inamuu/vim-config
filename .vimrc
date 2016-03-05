@@ -6,18 +6,19 @@ endif
 " NeoBundleを初期化
 call neobundle#begin(expand('~/.vim/bundle/'))
 
-" インストールするプラグインをここに記述
-NeoBundle 'Shougo/unite.vim'
+" Filer
 NeoBundle 'Shougo/vimfiler'
 
-"ツリー表示
+" Modify status line
+NeoBundle 'itchyny/lightline.vim'
+
+" ツリー表示
 "NeoBundle 'scrooloose/nerdtree'
 
 " git
 NeoBundle 'tpope/vim-fugitive'
-
-" Modify status line
-NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'kmnk/vim-unite-giti'
 
 call neobundle#end()
 
