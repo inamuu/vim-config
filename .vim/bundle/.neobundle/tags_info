@@ -1,4 +1,5 @@
 lightline.vim
 unite.vim
 vim-fugitive
+vim-unite-giti
 vimfiler
