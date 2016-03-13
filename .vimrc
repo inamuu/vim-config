@@ -49,7 +49,7 @@ let g:vimfiler_as_default_explorer = 1
 autocmd FileType vimfiler nmap <buffer> <CR> <Plug>(vimfiler_expand_or_edit)
 
 "keymapp
-noremap { {}<LEFT>
+inoremap { {}<LEFT>
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
