@@ -1,6 +1,6 @@
 "vim用のバックアップファイルの設定
 set backupdir=~/.vimbackup
-set directory=~/Downloads
+set directory=~/.vimbackup
 
 
 syntax on
