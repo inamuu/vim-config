@@ -50,6 +50,7 @@ let g:vimfiler_as_default_explorer = 1
 
 "" ディレクトリはツリー表示するだけ
 autocmd FileType vimfiler nmap <buffer> <CR> <Plug>(vimfiler_expand_or_edit)
+command Vf VimFiler -split -simple -winwidth=30 -no-quit
 
 "" セーフモードの設定("inoremap " "OFF
 let g:vimfiler_safe_mode_by_default=0
@@ -67,14 +68,14 @@ let g:netrw_winsize = 80
 
 
 "keymapp
-command Vf VimFiler -split -simple -winwidth=30 -no-quit
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>"inoremap " ""<LEFT>
-"inoremap ' ''<LEFT>
-vnoremap { "zdi^V{<C-R>z}<ESC>
-vnoremap [ "zdi^V[<C-R>z]<ESC>
-vnoremap ( "zdi^V(<C-R>z)<ESC>
-"vnoremap " "zdi^V"<C-R>z^V"<ESC>
-"vnoremap ' "zdi'<C-R>z'<ESC>
+""inoremap { {}<LEFT>
+""inoremap [ []<LEFT>
+""inoremap ( ()<LEFT>
+""inoremap " ""<LEFT>
+""inoremap ' ''<LEFT>
+""vnoremap { "zdi^V{<C-R>z}<ESC>
+""vnoremap [ "zdi^V[<C-R>z]<ESC>
+""vnoremap ( "zdi^V(<C-R>z)<ESC>
+""vnoremap " "zdi^V"<C-R>z^V"<ESC>
+""vnoremap ' "zdi'<C-R>z'<ESC>
 
