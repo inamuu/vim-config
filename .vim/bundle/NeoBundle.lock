@@ -1,5 +1,12 @@
 NeoBundleLock lightline.vim e6a43f98fab1ee2e373bd0b670803222607ed123
+<<<<<<< HEAD
 NeoBundleLock unite.vim aa19d38a0ad6bd2b9027a74e9c76166f6a54119d
 NeoBundleLock vim-fugitive 099d65826e0e0863552a92f7e574e3f24c8f4197
 NeoBundleLock vim-unite-giti aa19d38a0ad6bd2b9027a74e9c76166f6a54119d
 NeoBundleLock vimfiler aa19d38a0ad6bd2b9027a74e9c76166f6a54119d
+=======
+NeoBundleLock unite.vim 7db58a3d47e2bd59cdecc36085d836ff9c7d0454
+NeoBundleLock vim-fugitive 099d65826e0e0863552a92f7e574e3f24c8f4197
+NeoBundleLock vim-unite-giti aa19d38a0ad6bd2b9027a74e9c76166f6a54119d
+NeoBundleLock vimfiler 95d40001555f1a8b753ec34a864fb4e1f6ebafd8
+>>>>>>> master
