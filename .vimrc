@@ -66,6 +66,8 @@ let g:netrw_alto = 1
 " 'v'や'o'で開かれる新しいウィンドウのサイズを指定する
 let g:netrw_winsize = 80
 
+" indent line
+let g:indentLine_color_term = 239
 
 "keymapp
 ""inoremap { {}<LEFT>
