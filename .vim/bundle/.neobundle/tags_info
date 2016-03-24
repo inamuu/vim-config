@@ -1,5 +1,6 @@
 lightline.vim
 unite.vim
 vim-fugitive
+vim-indent-guides
 vim-unite-giti
 vimfiler
