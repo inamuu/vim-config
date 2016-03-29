@@ -1,6 +1,6 @@
 "vim用のバックアップファイルの設定
-set backupdir=~/.vimbackup
-set directory=~/.vimbackup
+set nobackup
+set noswapfile
 
 
 syntax on
@@ -13,8 +13,6 @@ set expandtab
 set tabstop=2
 set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
 set fileformats=unix,dos,mac
-set nobackup
-set noswapfile
 set noautoindent
 set browsedir=~/Document/
 

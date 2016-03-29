@@ -37,7 +37,7 @@ set ruler
 set noautoindent
 set expandtab
 set tabstop=2
-set shiftwidth=4
+set shiftwidth=2
 set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
 set fileformats=unix,dos,mac
 autocmd FileType * setlocal formatoptions-=r
@@ -72,7 +72,7 @@ let g:netrw_winsize = 80
 
 "Indent
 " vim立ち上げたときに、自動的にvim-indent-guidesをオンにする
-let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_enable_on_vim_startup=0
 " ガイドをスタートするインデントの量
 let g:indent_guides_start_level=2
 " 自動カラーを無効にする
