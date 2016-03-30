@@ -38,7 +38,7 @@ set noautoindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
-set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
+"set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
 set fileformats=unix,dos,mac
 autocmd FileType * setlocal formatoptions-=r
 autocmd FileType * setlocal formatoptions-=o
