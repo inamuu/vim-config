@@ -100,3 +100,23 @@ let g:indent_guides_guide_size = 1
 ""vnoremap " "zdi^V"<C-R>z^V"<ESC>
 ""vnoremap ' "zdi'<C-R>z'<ESC>
 
+""" lightline
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component': {
+      \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
+      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+      \ },
+      \ 'component_visible_condition': {
+      \   'readonly': '(&filetype!="help"&& &readonly)',
+      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+      \ },
+      \ 'separator': { 'left': '➜', 'right': '◀' },
+      \ 'subseparator': { 'left': '➜', 'right': '◀' }
+      \ }
+
