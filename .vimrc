@@ -86,6 +86,8 @@ let g:indent_guides_color_change_percent = 30
 " ガイドの幅
 let g:indent_guides_guide_size = 1
 
+" puppet syntax check
+let g:puppet_align_hashes = 0
 
 
 "keymapp
