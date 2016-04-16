@@ -89,6 +89,10 @@ let g:indent_guides_guide_size = 1
 " puppet syntax check
 let g:puppet_align_hashes = 0
 
+" ruby syntax check
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+autocmd BufNewFile,BufRead Berksfile set filetype=ruby
 
 "keymapp
 ""inoremap { {}<LEFT>
