@@ -122,7 +122,7 @@ let g:lightline = {
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
       \ },
-      \ 'separator': { 'left': '➜', 'right': '◀' },
-      \ 'subseparator': { 'left': '➜', 'right': '◀' }
+      \ 'separator': { 'left': "\u2b80", 'right': "\u2b82" },
+      \ 'subseparator': {  'left': "\u2b81", 'right': "\u2b83" }
       \ }
 
