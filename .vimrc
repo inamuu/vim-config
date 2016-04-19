@@ -20,6 +20,10 @@ NeoBundle 'kmnk/vim-unite-giti'
 " indent
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
+" check syntax for puppet
+NeoBundleLazy 'puppetlabs/puppet-syntax-vim', {
+  \ 'autoload': {'filetypes': ['puppet']}}
+
 call neobundle#end()
 
 " ファイルタイプ別のプラグイン/インデントを有効にする
