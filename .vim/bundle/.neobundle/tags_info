@@ -1,4 +1,5 @@
 lightline.vim
+puppet-syntax-vim
 unite.vim
 vim-fugitive
 vim-indent-guides

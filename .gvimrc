@@ -22,3 +22,6 @@ set columns=120
 
 "インデント
 NeoBundle 'nathanaelkane/vim-indent-guides'
+
+" colorscheme
+colorscheme morning
