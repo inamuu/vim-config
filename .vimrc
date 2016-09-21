@@ -1,9 +1,7 @@
 if has('vim_starting')
-   " 初回起動時のみruntimepathにneobundleのパスを指定する
    set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-" NeoBundleを初期化
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Filer
@@ -26,10 +24,8 @@ NeoBundleLazy 'puppetlabs/puppet-syntax-vim', {
 
 call neobundle#end()
 
-" ファイルタイプ別のプラグイン/インデントを有効にする
 filetype plugin indent on
 
-" プラグインチェック
 NeoBundleCheck
 
 syntax on
@@ -51,43 +47,26 @@ set noswapfile
 set browsedir=~/Document
 
 " VimFiler
-"" e . ツリー表示
 let g:vimfiler_as_default_explorer = 1
-" autocmd VimEnter * VimFiler -split -simple -winwidth=30 -no-quit
 
-"" ディレクトリはツリー表示するだけ
 autocmd FileType vimfiler nmap <buffer> <CR> <Plug>(vimfiler_expand_or_edit)
 command Vf VimFiler -split -simple -winwidth=30 -no-quit
 
-"" セーフモードの設定("inoremap " "OFF
 let g:vimfiler_safe_mode_by_default=0
 
-" netrwは常にtree view
 let g:netrw_liststyle = 3
-" 'v'でファイルを開くときは右側に開く。("inoremap "
-" "デフォルトが左側なので入れ替え)
 let g:netrw_altv = 1
-" 'o'でファイルを開くときは下側に開く。("inoremap "
-" "デフォルトが上側なので入れ替え)
 let g:netrw_alto = 1
-" 'v'や'o'で開かれる新しいウィンドウのサイズを指定する
 let g:netrw_winsize = 80
 
 
 "Indent
-" vim立ち上げたときに、自動的にvim-indent-guidesをオンにする
 let g:indent_guides_enable_on_vim_startup=0
-" ガイドをスタートするインデントの量
 let g:indent_guides_start_level=2
-" 自動カラーを無効にする
 let g:indent_guides_auto_colors=0
-" 奇数インデントのカラー
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
-" 偶数インデントのカラー
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
-" ハイライト色の変化の幅
 let g:indent_guides_color_change_percent = 30
-" ガイドの幅
 let g:indent_guides_guide_size = 1
 
 " puppet syntax check
@@ -98,19 +77,6 @@ autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead Berksfile set filetype=ruby
 
-"keymapp
-""inoremap { {}<LEFT>
-""inoremap [ []<LEFT>
-""inoremap ( ()<LEFT>
-""inoremap " ""<LEFT>
-""inoremap ' ''<LEFT>
-""vnoremap { "zdi^V{<C-R>z}<ESC>
-""vnoremap [ "zdi^V[<C-R>z]<ESC>
-""vnoremap ( "zdi^V(<C-R>z)<ESC>
-""vnoremap " "zdi^V"<C-R>z^V"<ESC>
-""vnoremap ' "zdi'<C-R>z'<ESC>
-
-""" lightline
 let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
