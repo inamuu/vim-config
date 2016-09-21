@@ -1,7 +1,5 @@
-"vim用のバックアップファイルの設定
 set nobackup
 set noswapfile
-
 
 syntax on
 colorscheme molokai
@@ -16,12 +14,9 @@ set fileformats=unix,dos,mac
 set noautoindent
 set browsedir=~/Document/
 
-"macvim用の設定
 set lines=40
 set columns=120
 
-"インデント
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
-" colorscheme
 colorscheme morning
